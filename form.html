@@ -22,33 +22,42 @@
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="form.html">Checkout</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
+          
+            <ul class="navbar-nav mr-auto">
+            
+                <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="form.html">Checkout</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+
+            </ul>
+
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
+
         </div>
+
     </nav>
 
     <!-- CONTAINER START -->
@@ -56,19 +65,22 @@
     <div class="container">
 
         <!-- HEADING -->
+
         <div class="row text-center my-5">
             <div class="col">
                 <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-                <h2>Checkout Form</h2>
+                <h2>Checkout form</h2>
                 <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
             </div>
         </div>
 
-        <!-- CHECKOUT -->
+        <!-- HEADING END -->
+
+        <!-- CHECKOUT START -->
 
         <div class="row">
 
-            <!-- CART -->
+            <!-- CART START -->
 
             <div class="col-sm-12 col-md-4 order-md-2">
                 <h4 class="d-flex justify-content-between align-items-center">
@@ -77,6 +89,7 @@
                 </h4>
 
                 <ul class="list-group">
+
                     <li class="list-group-item d-flex justify-content-between">
                         <div>
                             <h6 class="my-0">Product Name</h6>
@@ -84,6 +97,7 @@
                         </div>
                         <span class="text-muted">$12</span>
                     </li>
+
                     <li class="list-group-item d-flex justify-content-between">
                         <div>
                             <h6 class="my-0">Second Product</h6>
@@ -91,6 +105,7 @@
                         </div>
                         <span class="text-muted">$8</span>
                     </li>
+
                     <li class="list-group-item d-flex justify-content-between">
                         <div>
                             <h6 class="my-0">Third Product</h6>
@@ -98,6 +113,7 @@
                         </div>
                         <span class="text-muted">$5</span>
                     </li>
+
                     <li class="list-group-item d-flex justify-content-between text-success">
                         <div>
                             <h6 class="my-0">Promo Code</h6>
@@ -105,12 +121,14 @@
                         </div>
                         <span>-$5</span>
                     </li>
+
                     <li class="list-group-item d-flex justify-content-between">
                         <div>
                             <h6 class="my-0 font-weight-normal">Total (USD)</h6>
                         </div>
                         <strong>$20</strong>
                     </li>
+
                 </ul>
 
                 <form action="" class="card my-3 p-2">
@@ -130,20 +148,26 @@
             
             <div class="col-sm-12 col-md-8 order-md-1">
                 <h4>Billing Address</h4>
-                <form action="">
+                
+                <form action="" novalidate class="needs-validation">
+                    
                     <div class="row">
+                        
                         <div class="col">
                             <div class="form-group">
                                 <label for="firstname">First Name</label>
-                                <input type="text" name="firstname"  id="firstname" value="" class="form-control">
+                                <input type="text" name="firstname"  id="firstname" value="" class="form-control" required>
                             </div>
+                            <div class="invalid-feedback">First name is required</div>
                         </div>
+
                         <div class="col">
                             <div class="form-group">
                                 <label for="lastname">Last Name</label>
-                                <input type="text" value="" name="lastname" id="lastname" class="form-control">
+                                <input type="text" value="" name="lastname" id="lastname" class="form-control" required>
                             </div>
                         </div>
+
                     </div>
 
                     <div class="form-group">
@@ -152,13 +176,13 @@
                             <div class="input-group-prepend">
                                 <div class="input-group-text">@</div>
                             </div>  
-                            <input type="text" value="" name="username" id="username" class="form-control">              
+                            <input type="text" value="" name="username" id="username" class="form-control" required>              
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email <span class="text-muted">(Optional)</span></label>
-                        <input type="email" class="form-control" value="" name="email" id="email" placeholder="user@email.com">
+                        <input type="email" class="form-control" value="" name="email" id="email" placeholder="user@email.com" required>
                     </div>
 
                     <div class="form-group">
@@ -172,6 +196,7 @@
                     </div>
 
                     <div class="row">
+
                         <div class="col-sm-12 col-md-5">
                             <div class="form-group">
                                 <label for="country">Country</label>
@@ -181,6 +206,7 @@
                                 </select>
                             </div>
                         </div>
+
                         <div class="col-sm-12 col-md-4">
                             <div class="form-group">
                                 <label for="state">State</label>
@@ -190,6 +216,7 @@
                                 </select>
                             </div>
                         </div>
+
                         <div class="col-sm-12 col-md-3">
                             <div class="form-group">
                                 <label for="zip">Zip</label>
@@ -206,28 +233,30 @@
 
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="same-address" name="same-adress" value="">
-                        <label for="same-address" class="custom-control-label">Shipping address same as Billing</label>
+                        <label for="same-address" class="custom-control-label">Shipping address is the same as my billing address</label>
                     </div>
 
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="save-info" name="save-info" value="">
-                        <label for="save-info" class="custom-control-label">Save information for later</label>
+                        <label for="save-info" class="custom-control-label">Save this information for next time</label>
                     </div>
 
                     <hr>
 
+                    <h4 class="mb-3">Payment</h4>
+
                     <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="credit" name="paymentOption" value="" checked>
+                        <input type="radio" class="custom-control-input" id="credit" name="paymentOption" value="" checked required>
                         <label for="credit" class="custom-control-label">Credit Card</label>
                     </div>
 
                     <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="debit" name="paymentOption" value="">
+                        <input type="radio" class="custom-control-input" id="debit" name="paymentOption" value="" required>
                         <label for="debit" class="custom-control-label">Debit Card</label>
                     </div>
 
                     <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="paypal" name="paymentOption" value="">
+                        <input type="radio" class="custom-control-input" id="paypal" name="paymentOption" value="" required>
                         <label for="paypal" class="custom-control-label">Paypal</label>
                     </div>
 
@@ -235,14 +264,14 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="cc-name">Name on card</label>
-                                <input type="text" name="cc-name" id="cc-name" class="form-control" value="">
+                                <input type="text" name="cc-name" id="cc-name" class="form-control" value="" required>
                                 <small class="text-muted">Full name as displayed on card</small>
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group">
                                 <label for="cc-number">Credit card number</label>
-                                <input type="text" class="form-control" id="cc-number" name="cc-number" value="">
+                                <input type="text" class="form-control" id="cc-number" name="cc-number" value="" required>
                             </div>
                         </div>
                     </div>
@@ -251,13 +280,13 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label for="expiration">Expiration</label>
-                                <input type="text" name="expiration" id="expiration" class="form-control" value="">
+                                <input type="text" name="expiration" id="expiration" class="form-control" value="" required>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label for="cvv">CVV</label>
-                                <input type="text" name="cvv" id="cvv" class="form-control" value="">
+                                <input type="text" name="cvv" id="cvv" class="form-control" value="" required>
                             </div>
                         </div>
                     </div>
@@ -267,6 +296,7 @@
                     <hr>
 
                     <button class="btn btn-primary btn-lg btn-block">Continue to checkout</button>
+
                 </form>
             </div>
         </div>
@@ -291,6 +321,27 @@
     <!-- CONTAINER END -->
 
     <!-- Optional JavaScript; choose one of the two! -->
+
+    <script>
+
+        var form = document.querySelector('.needs-validation');
+
+        form.addEventListener('submit', function (event) {
+
+            // debugger;
+
+            if (form.checkValidity() === false) {
+
+                event.preventDefault(); // prevents from refreshing
+                event.stopPropagation(); // disables default actions of form
+
+            }
+
+            form.classList.add('was-validated');
+
+        });
+
+    </script>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
